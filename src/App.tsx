@@ -2,8 +2,6 @@ import React from "react";
 
 import "./App.scss";
 
-function App() {
-  return <></>;
+export default function Square() {
+  return <button>X</button>;
 }
-
-export default App;
