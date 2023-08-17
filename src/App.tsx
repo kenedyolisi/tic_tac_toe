@@ -1,4 +1,4 @@
-export default function Square() {
+export default function Board() {
   return (
     <>
       <div>
