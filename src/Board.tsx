@@ -1,7 +1,7 @@
 import { Square } from "./Square";
 
 
-export default function Board() {
+const Board = () => {
   return (
     <>
       <div>
@@ -21,4 +21,6 @@ export default function Board() {
       </div>
     </>
   );
-}
+};
+
+export default Board;
