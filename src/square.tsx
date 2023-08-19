@@ -1,8 +1,12 @@
-interface ISquareProp {
-  value: string;
-}
+import { useState } from "react";
 
-const Square = ({ value }: ISquareProp) => {
+const Square = () => {
+  const [value, setValue] = useState(null);
+
+  const handleClick = () => {
+    //...
+  };
+
   return <button>{value}</button>;
 };
 
