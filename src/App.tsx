@@ -1,3 +1,5 @@
+import { Square } from "./Square";
+
 export default function Board() {
   return (
     <>
@@ -20,6 +22,4 @@ export default function Board() {
   );
 }
 
-function Square({ value }) {
-  return <button>{value}</button>;
-}
+
