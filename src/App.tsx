@@ -20,6 +20,6 @@ export default function Board() {
   );
 }
 
-function Square() {
-  return <button>1</button>;
+function Square({ value }) {
+  return <button>{value}</button>;
 }
