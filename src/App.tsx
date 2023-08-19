@@ -19,3 +19,7 @@ export default function Board() {
     </>
   );
 }
+
+function Square() {
+  return <button>1</button>;
+}
