@@ -1,14 +1,7 @@
-import { useState } from "react";
 
-const Square = () => {
-  const [value, setValue] = useState("");
-
-  const handleClick = () => {
-    setValue("X");
-  };
-
+const Square = ({ value }) => {
   return (
-    <button className="btn btn-lg btn-outline-secondary" onClick={handleClick}>
+    <button className="btn btn-lg btn-outline-secondary">
       {value}
     </button>
   );
