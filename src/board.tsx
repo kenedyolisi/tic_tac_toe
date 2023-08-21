@@ -6,6 +6,11 @@ const Board = () => {
   const [xIsNext, setXIsNext] = useState(true);
 
   const handleClick = (i: number) => {
+    // Check if square is already filled and do nothing
+    if (squares[i]) {
+      return;
+    }
+
     const nextSquares = squares.slice();
 
     if (xIsNext) {
