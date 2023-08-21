@@ -7,7 +7,11 @@ const Square = () => {
     setValue("X");
   };
 
-  return <button onClick={handleClick}>{value}</button>;
+  return (
+    <button className="btn btn-lg btn-outline-secondary" onClick={handleClick}>
+      {value}
+    </button>
+  );
 };
 
 export default Square;
