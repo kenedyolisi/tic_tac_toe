@@ -1,4 +1,4 @@
-const Square = ({ value, onSquareClick }) => {
+export default function Square({ value, onSquareClick }) {
   return (
     <button
       onClick={onSquareClick}
@@ -7,6 +7,4 @@ const Square = ({ value, onSquareClick }) => {
       {value}
     </button>
   );
-};
-
-export default Square;
+}

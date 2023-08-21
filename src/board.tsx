@@ -1,19 +1,11 @@
 import { useState } from "react";
 import Square from "./square";
 
-const Board = () => {
-  const [squares, setSquares] = useState(Array(9).fill(null));
+export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
+  const [squares, setSquares] = useState(Array(9).fill(null));
 
-  const winner = calculateWinner(squares);
-  let status;
-  if (winner) {
-    status = `winner: ${winner}`;
-  } else {
-    status = `Next player: ${xIsNext ? "X" : "O"}`;
-  }
-
-  const handleClick = (i: number) => {
+ const handleClick = (i: number) => {
     // Check if square is already filled and do nothing
     if (squares[i] || calculateWinner(squares)) {
       return;
@@ -29,11 +21,22 @@ const Board = () => {
 
     setSquares(nextSquares);
     setXIsNext(!xIsNext);
-  };
+ };
+  
+  const winner = calculateWinner(squares);
+  let status;
+  if (winner) {
+    status = `winner: ${winner}`;
+  } else {
+    status = `Next player: ${xIsNext ? "X" : "O"}`;
+  }
+
+ 
 
   return (
     <>
       <div>{status}</div>
+      
       <div>
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
@@ -51,9 +54,7 @@ const Board = () => {
       </div>
     </>
   );
-};
-
-export default Board;
+}
 
 const calculateWinner = (squares) => {
   const lines = [
