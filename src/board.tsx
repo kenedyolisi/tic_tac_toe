@@ -1,11 +1,7 @@
-import { useState } from "react";
 import Square from "./square";
 
-export default function Board() {
-  const [xIsNext, setXIsNext] = useState(true);
-  const [squares, setSquares] = useState(Array(9).fill(null));
-
- const handleClick = (i: number) => {
+export default function Board({ xIsNext, squares, onPlay }) {
+  const handleClick = (i: number) => {
     // Check if square is already filled and do nothing
     if (squares[i] || calculateWinner(squares)) {
       return;
@@ -19,10 +15,9 @@ export default function Board() {
       nextSquares[i] = "O";
     }
 
-    setSquares(nextSquares);
-    setXIsNext(!xIsNext);
- };
-  
+    onPlay(nextSquares)
+  };
+
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
@@ -31,12 +26,10 @@ export default function Board() {
     status = `Next player: ${xIsNext ? "X" : "O"}`;
   }
 
- 
-
   return (
     <>
       <div>{status}</div>
-      
+
       <div>
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />

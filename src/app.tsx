@@ -1,9 +1,10 @@
-import Board from "./board";
+import { useState } from "react";
+import Game from "./game";
 
 export default function App() {
   return (
     <main>
-      <Board />
+      <Game />
     </main>
   );
 }
