@@ -2,6 +2,7 @@ import Square from "./square";
 
 export default function Board({ xIsNext, squares, onPlay }) {
   const handleClick = (i: number) => {
+
     // Check if square is already filled and do nothing
     if (squares[i] || calculateWinner(squares)) {
       return;
