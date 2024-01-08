@@ -1,4 +1,5 @@
-import Game from "./game";
+import "app.scss";
+import Game from "./components/game";
 
 export default function App() {
   return (
