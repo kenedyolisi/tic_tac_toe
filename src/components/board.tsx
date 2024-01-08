@@ -1,8 +1,13 @@
 import Square from "./square";
 
-export default function Board({ xIsNext, squares, onPlay }) {
-  const handleClick = (i: number) => {
+interface BoardProps {
+  xIsNext: boolean;
+  squares: string[];
+  onPlay: (squares: string[]) => void;
+}
 
+export default function Board({ xIsNext, squares, onPlay }: BoardProps) {
+  const handleClick = (i: number) => {
     // Check if square is already filled and do nothing
     if (squares[i] || calculateWinner(squares)) {
       return;
@@ -16,7 +21,7 @@ export default function Board({ xIsNext, squares, onPlay }) {
       nextSquares[i] = "O";
     }
 
-    onPlay(nextSquares)
+    onPlay(nextSquares);
   };
 
   const winner = calculateWinner(squares);
@@ -50,7 +55,7 @@ export default function Board({ xIsNext, squares, onPlay }) {
   );
 }
 
-const calculateWinner = (squares) => {
+const calculateWinner = (squares: string[]) => {
   const lines = [
     [0, 1, 2],
     [3, 4, 5],
