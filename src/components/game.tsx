@@ -12,8 +12,6 @@ export default function Game() {
 
     SetHistory(nextHistory);
     setCurrentMove(nextHistory.length - 1);
-
-    console.log(currentMove);
   };
 
   const jumpTo = (nextMove: number) => {
@@ -30,19 +28,21 @@ export default function Game() {
 
     return (
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        <button
+          className="p-2 border rounded active:scale-[98%]"
+          type="button"
+          onClick={() => jumpTo(move)}
+        >
+          {description}
+        </button>
       </li>
     );
   });
 
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center">
-      <div>
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
-      </div>
-      <div>
-        <ol>{moves}</ol>
-      </div>
+    <div className="py-2">
+      <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+      <ul className="flex flex-col gap-3">{moves}</ul>
     </div>
   );
 }
