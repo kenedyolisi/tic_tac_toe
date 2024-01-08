@@ -7,7 +7,7 @@ export default function Game() {
   const xIsNext = currentMove % 2 === 0;
   const currentSquares = history[currentMove];
 
-  const handlePlay = (nextSquares) => {
+  const handlePlay = (nextSquares: string[]) => {
     const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
 
     SetHistory(nextHistory);
@@ -20,7 +20,7 @@ export default function Game() {
     setCurrentMove(nextMove);
   };
 
-  const moves = history.map((squares, move) => {
+  const moves = history.map((_squares: string[], move) => {
     let description;
     if (move > 0) {
       description = `Go to move #${move}`;
