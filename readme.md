@@ -2,7 +2,7 @@
 
 This is a personal project of tic-tac-toe game I created while honing my skills in react following the [Tic-Tac-Toe tutorial](https://react.devs/learn/tutorial-tic-tac-toe).
 
-The game:
+## Features
 
 - Lets you play tic-tac-toe,
 
