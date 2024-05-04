@@ -1,14 +1,10 @@
-# Tic Tac Toe Game
+# Tic Tac Toe
 
-This is a personal project of tic-tac-toe game I created while honing my skills in react following the [Tic-Tac-Toe tutorial](https://react.devs/learn/tutorial-tic-tac-toe).
+This is a personal project of tic-tac-toe game.
 
-The game:
+## Features
 
 - Lets you play tic-tac-toe,
-
-- Indicates when a player has won the game,
-
 - Stores the game's history as a the game progresses,
-
+- Indicates when a player has won the game,
 - Allows players to review the game's history and see previous versions of the game's board.
-
