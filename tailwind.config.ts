@@ -1,9 +1,11 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  content: ["./index.html", "src/**/*.{js,jsx.ts,tsx}"],
+  applyBaseStyles: false,
+  nesting: true,
+  content: ["./index.html", "src/**/*.{js,jsx,svelte,ts,tsx}"],
+  plugins: [],
   theme: {
     extend: {},
   },
-  plugins: [],
 } satisfies Config;

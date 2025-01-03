@@ -4,15 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "vite",
+    "dev": "bunx --bun vite",
+    "build": "bunx --bun vite build",
+    "start": "bunx --bun vite",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@sveltejs/vite-plugin-svelte": "^3.1.0",
+    "svelte": "^5.0.0-next.123"
   },
   "devDependencies": {
     "@types/react": "^18.2.61",

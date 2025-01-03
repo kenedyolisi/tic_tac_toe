@@ -1,8 +1,9 @@
 export default function Square({ value, onSquareClick }) {
   return (
     <button
+      className="border hover:bg-gray-100"
+      type="button"
       onClick={onSquareClick}
-      className="btn btn-lg btn-outline-secondary"
     >
       {value}
     </button>
