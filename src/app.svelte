@@ -1,5 +1,5 @@
 <script>
-  import Game from "./components/game.svelte.svelte";
+  import Game from "./components/game.svelte";
 </script>
 
 <div>
