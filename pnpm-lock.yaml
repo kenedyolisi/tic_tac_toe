@@ -1313,6 +1313,7 @@ snapshots:
     dependencies:
       readdirp: 4.0.2
     optional: true
+    optional: true
 
   clsx@2.1.1: {}
 
@@ -1436,6 +1437,8 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
+  immutable@5.0.3:
+    optional: true
   immutable@5.0.3:
     optional: true
 
@@ -1587,6 +1590,8 @@ snapshots:
     dependencies:
       picomatch: 2.3.1
 
+  readdirp@4.0.2:
+    optional: true
   readdirp@4.0.2:
     optional: true
 
