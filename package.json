@@ -5,10 +5,9 @@
   "type": "module",
   "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c",
   "scripts": {
-    "dev": "bunx --bun vite",
-    "build": "bunx --bun vite build",
-    "start": "bunx --bun vite",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,17 +15,11 @@
     "svelte": "^5.0.0-next.123"
   },
   "devDependencies": {
-    "@types/react": "^18.2.61",
-    "@types/react-dom": "^18.2.25",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.19",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.4.38",
-    "sass": "^1.72.0",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.4.3",
     "vite": "^5.4.11"
