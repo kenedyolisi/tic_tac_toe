@@ -1,6 +1,6 @@
 # Tic Tac Toe
 
-This is a personal project of tic-tac-toe game.
+This is a personal project of tic-tac-toe game inspired by [React Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe).
 
 ## Features
 
