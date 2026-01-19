@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@sveltejs/vite-plugin-svelte": "^4.0.4",
-    "svelte": "^5.46.0"
+    "svelte": "^5.47.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.0.2",
